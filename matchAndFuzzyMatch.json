@@ -1,0 +1,22 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "match": {
+                        "_all": "jeans"
+                    }
+                },
+                {
+                    "match": {
+                        "_all": {
+                            "query": "jeans",
+                            "fuzziness": "1",
+                            "prefix_length": 2
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

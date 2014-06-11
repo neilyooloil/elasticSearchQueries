@@ -1,0 +1,7 @@
+{
+    "filter": {
+        "exists": {
+            "field": "phone"
+        }
+    }
+}
