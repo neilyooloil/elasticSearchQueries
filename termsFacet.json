@@ -1,0 +1,9 @@
+{
+    "facets": {
+        "urls": {
+            "terms": {
+                "field": "url"
+            }
+        }
+    }
+}

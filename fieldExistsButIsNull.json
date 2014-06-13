@@ -1,0 +1,20 @@
+{ 
+  "query": {
+    "filtered": {
+      "filter": {
+        "bool": {
+          "must": { 
+            "exists":{"field":"website"}
+          },
+          "must_not": {
+            "missing":{
+              "field":"phone",
+              "existence":true,
+              "null_value":true
+            }
+          }
+        }
+      }
+    }
+  }
+}

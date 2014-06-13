@@ -1,0 +1,11 @@
+{
+    "size": 35,
+    "query": {
+        "match": {
+            "message": {
+                "query": "desk",
+                "fuzziness": "1"
+            }
+        }
+    }
+}

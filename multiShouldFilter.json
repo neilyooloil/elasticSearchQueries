@@ -1,0 +1,18 @@
+{
+    "filter": {
+        "bool": {
+            "should": [
+                {
+                    "term": {
+                        "url": "/clickevent"
+                    }
+                },
+                {
+                    "term": {
+                        "status": "304"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "query": {
+        "match": {
+            "tags": "search"
+        }
+    },
+    "facets": {
+        "urls": {
+            "terms": {
+                "field": "url"
+            }
+        }
+    }
+}
